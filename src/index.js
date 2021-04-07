@@ -8,7 +8,7 @@ import testReducer from './reducers/testsReducer';
 import testsReducer from './reducers/testsReducer'
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore(testReducer, applyMiddleware(thunk))
+const store = createStore(testsReducer, applyMiddleware(thunk))
 
 ReactDOM.render(
   <React.StrictMode>
