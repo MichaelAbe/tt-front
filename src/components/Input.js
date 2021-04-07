@@ -17,7 +17,7 @@ class Input extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-        console.log(this.state)
+        this.props.addResults(this.state, this.props.history)
     }
 
     render() {
@@ -40,4 +40,4 @@ class Input extends Component {
     }
 }
 
-export default Input
+export default connect(null, { addResults })(Input)

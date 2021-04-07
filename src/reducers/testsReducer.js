@@ -19,6 +19,11 @@ const testReducer = (state=initialState, action) => {
                     loading: false,
                     results: action.results
                 }
+            case "ADD_RESULT":
+                return {
+                    ...state,
+                    results: [...state.results, action.test]
+                }
         default:
             return state;
     }
@@ -27,3 +32,4 @@ const testReducer = (state=initialState, action) => {
 export default testReducer
 
 
+ 
