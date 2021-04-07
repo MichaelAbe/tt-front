@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { addResults } from '../actions/results'
 
 class Input extends Component {
 
