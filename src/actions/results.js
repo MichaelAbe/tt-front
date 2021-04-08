@@ -21,7 +21,7 @@ export const addResults = (test, history) => {
          .then(response => response.json())
          .then(test => {
              dispatch({ type: "ADD_RESULT", test })
-             history.push("/tests")
+             history.push("/results")
          })
     }
 }
